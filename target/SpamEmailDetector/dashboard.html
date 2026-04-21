@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard |Spam Detection System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="tech-hero-bg">
+    <div id="page-loader">
+    <div class="spinner"></div>
+    <div class="loader-text">Connecting....</div>
+</div>
+    <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+</div>
+    <header class="nav-container">
+        <div class="text-2xl font-bold">🛡️ <span class="text-blue-400">Spam Detection System </span></div>
+        <a href="login.html" class="text-red-400 font-bold">Logout</a>
+    </header>
+
+    <main class="content-wrapper">
+        <div class="glass-card p-8 w-full">
+            <div class="flex justify-center mb-6">
+        <div class="w-24 h-24 rounded-full bg-gradient-to-tr from-green-400 to-blue-500 flex items-center justify-center p-1 shadow-lg shadow-blue-500/20">
+            <img src="images/analysis.png" alt="Profile" class="w-full h-full object-contain rounded-full">
+            
+            </div>
+    </div>  
+            <h2 class="text-2xl font-bold mb-6">Spam Analysis Workspace</h2>
+            <form action="SpamDetectServlet" method="POST" onsubmit="showLoader()">
+                <textarea name="content" required class="w-full h-64 bg-white/5 border border-white/10 rounded-xl p-4 text-white outline-none focus:border-blue-500" placeholder="Enter message text..."></textarea>
+                <button type="submit" class="mt-6 bg-blue-600 px-10 py-4 rounded-xl font-bold w-full md:w-auto">Run Scan</button>
+            </form>
+        </div>
+    </main>
+
+   <footer class="w-full py-10 border-t border-white/5 bg-black/20 text-center">
+            <p class="text-gray-500 text-sm">&copy; 2026 Spam Detection System</p>
+        </div>
+    </footer>
+
+<script>
+    window.addEventListener("load", function() {
+        const loader = document.getElementById("page-loader");
+        // Add a small timeout (500ms) so the user actually sees the loader
+        setTimeout(() => {
+            loader.classList.add("loader-hidden");
+        }, 500);
+    });
+</script>
+</body>
+</html>

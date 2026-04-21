@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeInbox | Spam Detection System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="tech-hero-bg">
+    <div id="page-loader">
+    <div class="spinner"></div>
+    <div class="loader-text">Securing Connection...</div>
+</div>
+    <div class="bg-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+</div>
+
+    <header class="nav-container">
+    <div class="text-2xl font-bold flex items-center gap-2">
+        🛡️ <span class="text-blue-400">Spam Detection System</span>
+    </div>
+    <div class="flex items-center gap-8">
+        <a href="login.html" class="text-gray-400 hover:text-white transition font-medium">Log In</a>
+        <a href="register.html" class="bg-blue-600 px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-900/40">Join Us</a>
+    </div>
+</header>
+
+    <main class="content-wrapper">
+        <div class="text-center mb-16">
+            <h1 class="heading-hero">Spam Detection System</h1>
+            <p class="text-gray-400 text-lg mb-10 mx-auto max-w-xl">
+                Advanced <span class="text-blue-400">Trilingual NLP</span> detection to keep your digital identity secure from phishing attempts.
+            </p>
+        
+        <div class="info-grid mb-24">
+            <div class="glass-card">
+                <h3 class="text-xl font-bold text-blue-400 mb-3">Trilingual Engine</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Specifically tuned to detect regional Indian scams. Our dictionary includes English, Hindi & Marathi "Red Flag" keywords.</p>
+            </div>
+            
+            <div class="glass-card">
+                <h3 class="text-xl font-bold text-red-400 mb-3">Phishing Defense</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Spam is the gateway for data theft. We identify psychological triggers like 'Urgency' and 'Fake Rewards' used by attackers.</p>
+            </div>
+
+            <div class="glass-card md:col-span-2">
+                <h3 class="text-xl font-bold text-green-400 mb-3">Modern Tech Stack</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">Built using <b>Jakarta EE 10</b> and <b>Tomcat 10</b>. We process content in volatile memory—meaning your sensitive data is never logged or stored.</p>
+            </div>
+        </div>
+
+        <section class="w-full mb-24 text-center">
+            <h2 class="text-3xl font-bold mb-12">How It <span class="text-blue-500">Works</span></h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6">
+                    <div class="w-12 h-12 bg-blue-600/20 text-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">1</div>
+                    <h4 class="font-bold mb-2">Input Content</h4>
+                    <p class="text-gray-500 text-sm">Copy the suspicious email text and paste it into our secure checker.</p>
+                </div>
+                <div class="p-6">
+                    <div class="w-12 h-12 bg-blue-600/20 text-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">2</div>
+                    <h4 class="font-bold mb-2">NLP Scanning</h4>
+                    <p class="text-gray-500 text-sm">Our server-side Java logic scans the text against trilingual threat patterns.</p>
+                </div>
+                <div class="p-6">
+                    <div class="w-12 h-12 bg-blue-600/20 text-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">3</div>
+                    <h4 class="font-bold mb-2">Get Results</h4>
+                    <p class="text-gray-500 text-sm">Receive a detailed score and an explanation of why the content was flagged.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full mb-24 bg-white/5 rounded-3xl p-10 border border-white/10 text-left">
+            <h2 class="text-2xl font-bold mb-8">Frequently Asked Questions</h2>
+            <div class="space-y-6">
+                <div class="border-b border-white/5 pb-4">
+                    <h5 class="text-blue-400 font-bold mb-2">Is my data safe?</h5>
+                    <p class="text-gray-400 text-sm">Absolutely. SafeInbox is a stateless application. We analyze text in real-time and do not save your scans to any database.</p>
+                </div>
+                <div class="border-b border-white/5 pb-4">
+                    <h5 class="text-blue-400 font-bold mb-2">Why Marathi and Hindi?</h5>
+                    <p class="text-gray-400 text-sm">Many modern phishing attacks target users in their native languages to build false trust. We are the first tool to prioritize regional security.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full py-10 border-t border-white/5 bg-black/20 text-center">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-gray-500 text-sm">&copy; 2026 Spam Detection System</p>
+           <div class="flex gap-6 text-xs text-gray-400">
+    <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
+    <a href="terms.html" class="hover:text-white transition">Terms of Use</a>
+    <a href="contact.html" class="hover:text-white transition">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    window.addEventListener("load", function() {
+        const loader = document.getElementById("page-loader");
+        // Add a small timeout (500ms) so the user actually sees the loader
+        setTimeout(() => {
+            loader.classList.add("loader-hidden");
+        }, 500);
+    });
+</script>
+</body>
+</html>

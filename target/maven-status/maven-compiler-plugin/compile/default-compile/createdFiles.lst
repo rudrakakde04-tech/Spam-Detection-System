@@ -1,0 +1,7 @@
+com\spam\SpamDetectServlet.class
+com\spam\ForgotPassServlet.class
+com\spam\LoginServlet.class
+com\spam\MailUtil.class
+com\spam\MailUtil$1.class
+com\spam\RegisterServlet.class
+com\spam\AddSpamWordServlet.class
