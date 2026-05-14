@@ -37,13 +37,3 @@ Deployment: Deploy the project in Apache Tomcat.
 
 Access: Open your browser and navigate to http://localhost:8080/SpamEmailDetector/.
 
-How to add this to your GitHub:
-On your GitHub repository page (https://github.com/rudrakakde04-tech/Spam-Detection-System), click the button that says "Add file".
-
-Select "Create new file".
-
-Name the file exactly: README.md.
-
-Paste the text above into the large box.
-
-Scroll to the bottom and click the green "Commit changes" button.
